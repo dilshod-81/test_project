@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -119,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_URL = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'static'  # <- sho'tta xato yozgansiz !!!! Bo'ldi ishlidi endi. Ishladi.
 
 STATICFILES_DIRS = BASE_DIR / 'assets',
 
